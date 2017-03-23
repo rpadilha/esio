@@ -1,0 +1,1 @@
+web: gunicorn esiomotores.wsgi --log-file -

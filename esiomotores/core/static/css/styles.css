@@ -1,0 +1,635 @@
+/*
+CORES
+=====
+Roxo -> rgb(54,35,105)
+Verde Água -> rgb(18,187,184)
+Verde Claro Hero -> rgb(111,163,17)
+Cinza Escuro Bem Vindo // Ultimas Notícias // Preview Blog -> rgb(54,67,78)
+Cinza Claro Revendedor -> rgb(209,209,210)
+Cinza Claro Últimas Notícias -> rgb(124,124,124)
+
+*/
+
+
+/* ==================== Configurações independentes de tamanho de tela ==================== */
+/* ==================== GENERAL ==================== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: Arial, Helvetica, SansSerif;
+    /*text-align: center;*/
+}
+.custom-button {
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+}
+.blog-preview > .blogs > button {
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgb(51,39,101);
+    color: white;
+}
+/* ==================== NAVBAR ==================== */
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: white;
+    background-color: rgb(51,39,101);
+}
+.navbar > .container {
+    min-height: 104px;
+}
+.container > .navbar-collapse > ul > li > a,
+.container > .navbar-collapse > ul > li > a:link,
+.container > .navbar-collapse > ul > li > a:visited,
+.container > .navbar-collapse > ul > li > a:hover,
+.container > .navbar-collapse > ul > li > a:active {
+    color: white;
+}
+.container > .navbar-collapse > ul > li > a:hover {
+    background-color: rgb(18,187,184);
+}
+.sitelogo > img {
+    display: block;
+    margin: 0 auto;
+}
+.companies > h2,
+.blog-preview > h2 {
+    font-weight: bold;
+    margin-top: 5px;
+    padding-bottom: 10px;
+}
+/* ==================== HERO ==================== */
+.cover {
+    background: url("../img/00-hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+    text-align: center;
+}
+.cover-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+.cover-text > h1 {
+    color: rgb(51,39,101);
+    font-family: HeroBold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+}
+.cover-text > h2 {
+    color: rgb(111,163,17);
+    margin: 0;
+}
+.cover-text > button {
+    background-color: rgb(51,39,101);
+    color: white;
+}
+.cover-text > button:hover {
+    box-shadow: 1px 1px black;
+}
+/* ==================== WELCOME ==================== */
+.welcome {
+    padding: 8px 0 28px;
+    text-align: center;
+}
+.welcome-text > h1 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.welcome-text p {
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.welcome-text > button {
+    background-color: rgb(54,67,78);
+    color: white;
+}
+.welcome-text > button:hover {
+    box-shadow: 2px 2px black;
+}
+/* ==================== COMPANIES ==================== */
+.companies {
+    background-color: rgb(209,209,210);
+    width: 100%;
+    padding: 20px 100px 30px;
+    text-align: center;
+}
+.companies > #companies-logo a {
+    display: inline-block;
+    margin: 0 auto;
+}
+.companies > #companies-logo img {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.companies > #companies-logo .col-md-3 {
+    display: inline-block;
+    margin: 0 auto;
+}
+/* ==================== COMMITMENT ==================== */
+.commitment {
+    background: url("../img/00-compromisso.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+    text-align: center;
+}
+.commitment-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+.commitment-text > h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+/* ==================== BLOG ==================== */
+.blog-preview {
+    width: 100%;
+}
+.blog-preview > h2 {
+    text-align: center;
+}
+.blog-preview > p {
+    color: rgb(124,124,124);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.blog-preview > .blogs {
+    color: rgb(54,67,78);
+}
+.blog-preview > .blogs > h4 {
+    color: rgb(54,67,78);
+}
+.blog-preview > .blogs > p {
+    color: rgb(54,67,78);
+    font-weight: bold;
+}
+.blog-preview > .blogs > a {
+    color: rgb(54,67,78);
+    text-decoration: none;
+    text-transform: none;
+}
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: rgb(51,39,101);
+    color: white;
+}
+.footer #add-content {
+    padding-bottom: 20px;
+}
+.footer a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+}
+.footer p {
+    text-align: left;
+}
+.footer form {
+    margin: 0;
+    padding: 0;
+}
+.footer input {
+    display: block;
+    background-color: rgb(51,39,101);
+}
+.footer button {
+    border: none;
+    background-color: rgb(18,187,184);
+}
+.footer > .row #logo {
+    display: block;
+}
+.footer > .row #links > #home > a,
+.footer > .row > #register > p {
+    color: rgb(18,187,184);
+}
+.footer > #developed {
+    font-family: HeroStd;
+    text-align: right;
+}
+.footer > #developed > #link{
+    text-decoration: underline;
+}
+.footer > #developed > #link:hover{
+    text-decoration: none;
+}
+
+
+/* ==================== Telas - col-sm (tablet) e SUPERIORES ==================== */
+@media only screen and (min-width: 768px) {
+/* ==================== GENERAL ==================== */
+    .custom-button {
+        height: 50px;
+        width: 150px;
+        font-size: 16px;
+    }
+    .cover-text > h1,
+    .welcome-text > h1 {
+        font-size: 35px;
+    }
+    .sitelogo > img {
+        width: 25px;
+    }
+/* ==================== NAVBAR ==================== */
+    .navbar-brand > img {
+        max-width: 75%;
+    }
+    .navbar-collapse {
+        position: relative;
+    }
+    .navbar-nav {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+    }
+    .container > .navbar-collapse > ul > li > a {
+        padding: 3em 1em;
+    }
+/* ==================== HERO ==================== */
+    .cover-text{
+        padding-top: 120px;
+        padding-bottom: 200px;
+    }
+    .cover-text > h2 {
+        font-size: 22px;
+        padding: 0 0 30px;
+    }
+/* ==================== WELCOME ==================== */
+    .welcome-text p {
+        font-size: 17px;
+    }
+/* ==================== COMPANIES ==================== */
+    .companies > h2 {
+        font-size: 30px;
+    }
+    .companies > #companies-logo img {
+        width: 250px;
+    }
+/* ==================== COMMITMENT ==================== */
+    .commitment-text {
+        padding: 160px 0;
+    }
+    .commitment-text > h1 {
+        font-size: 28px;
+        padding-bottom: 5px;
+    }
+/* ==================== BLOG ==================== */
+    .blog-preview {
+        padding: 20px 60px 30px;
+    }
+    .blog-preview > h2 {
+        margin-bottom: 0;
+        padding-bottom: 3px;
+    }
+    .blog-preview > p {
+        font-size: 18px;
+    }
+    .blog-preview > .blogs {
+        padding: 20px 50px 0;
+    }
+    .blog-preview > .blogs > h4 {
+        font-size: 22px;
+    }
+    .blog-preview > .blogs > p {
+        font-size: 17px;
+    }
+/* ==================== FOOTER ==================== */
+    .footer > #main-footer {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .footer p {
+        font-size: 18px;
+    }
+    .footer #links {
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+    .footer #address {
+        padding-bottom: 30px;
+    }
+    .footer .icon {
+        width: 20px;
+    }
+    .footer #add-icon {
+        width: 15px;
+    }
+    .footer input {
+        width: 305px;
+        margin-bottom: 10px;
+        padding: 2px 5px;
+        font-size: 20px;
+    }
+    .footer button {
+        padding: 10px 4px;
+    }
+    .footer > .row #logo {
+        width: 300px;
+        padding-bottom: 25px;
+    }
+    .footer > #developed {
+        font-size: 15px;
+        padding: 0 10px 15px 0;
+    }
+    .footer #add-content {
+        padding-bottom: 15px;
+    }
+}
+
+
+/* ==================== Telas - INFERIORES a col-sm (tablet) e MAIORES que 495px ==================== */
+@media only screen and (max-width: 767px) {
+/* ==================== GENERAL ==================== */
+    .custom-button {
+        height: 40px;
+        width: 125px;
+        font-size: 13px;
+    }
+    .cover-text > h1,
+    .welcome-text > h1 {
+        font-size: 27px;
+    }
+    .sitelogo > img {
+        width: 22px;
+    }
+/* ==================== HAMBURGER EFECTS ==================== */
+    .navbar-default .navbar-toggle {
+        border-color: rgb(51,39,101); /* hamburger border color */
+        background-color: rgb(51,39,101); /* hamburger background */
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: rgb(18,187,184); /* hamburger horizontal lines */
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: rgb(51,39,101); /* hamburger background effects on HOVER or FOCUS */
+    }
+    .navbar-toggle .icon-bar:nth-of-type(2) {
+          top: 1px;
+    }
+    .navbar-toggle .icon-bar:nth-of-type(3) {
+        top: 2px;
+    }
+    .navbar-toggle .icon-bar {
+          position: relative;
+          transition: all 500ms ease-in-out;
+    }
+    .navbar-toggle.active .icon-bar:nth-of-type(1) {
+          top: 6px;
+          transform: rotate(45deg);
+    }
+    .navbar-toggle.active .icon-bar:nth-of-type(2) {
+          background-color: transparent;
+    }
+    .navbar-toggle.active .icon-bar:nth-of-type(3) {
+          top: -6px;
+          transform: rotate(-45deg);
+    }
+/* ==================== NAVBAR ==================== */
+    .navbar > .container {
+        min-height: 145px;
+    }
+    .navbar-brand > img {
+        max-width: 80%;
+        margin: auto auto;
+    }
+    .navbar-collapse {
+        margin-top: 50px;
+    }
+    .container > .navbar-collapse > ul > li > a {
+        font-weight: bold;
+    }
+/* ==================== HERO ==================== */
+    .cover-text{
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+    .cover-text > h2 {
+        font-size: 18px;
+        padding: 0 0 30px;
+    }
+/* ==================== WELCOME ==================== */
+    .welcome-text p {
+        font-size: 15px;
+    }
+/* ==================== COMPANIES ==================== */
+    .companies > h2 {
+        font-size: 24px;
+    }
+    .companies > #companies-logo img {
+        width: 250px;
+    }
+/* ==================== COMMITMENT ==================== */
+    .commitment-text {
+        padding: 100px 15px;
+    }
+    .commitment-text > h1 {
+        font-size: 24px;
+        padding-bottom: 8px;
+    }
+/* ==================== BLOG ==================== */
+    .blog-preview {
+        padding: 20px 60px 30px;
+    }
+    .blog-preview > h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+        padding-bottom: 3px;
+    }
+    .blog-preview > p {
+        font-size: 14px;
+    }
+    .blog-preview > .blogs {
+        padding: 20px 0;
+    }
+    .blog-preview > .blogs > h4 {
+        font-size: 18px;
+    }
+    .blog-preview > .blogs > p {
+        font-size: 14px;
+    }
+/* ==================== FOOTER ==================== */
+    .footer > #main-footer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+    .footer #add-content {
+        padding-bottom: 0;
+    }
+    .footer #links {
+        padding: 30px 0;
+    }
+    .footer .icon {
+        width: 20px;
+    }
+    .footer #add-icon {
+        width: 15px;
+    }
+    .footer input {
+        width: 300px;
+        margin-bottom: 10px;
+        padding: 6px 3px;
+    }
+    .footer button {
+        padding: 6px 4px;
+    }
+    .footer > .row #logo {
+        width: 250px;
+        padding-bottom: 25px;
+    }
+    .footer > #developed {
+        font-size: 13px;
+        padding: 0 10px 15px 0;
+    }
+}
+
+
+/* ==================== Telas - IGUAIS ou INFERIORES 495px ==================== */
+@media only screen and (max-width: 495px) {
+/* ==================== GENERAL ==================== */
+    .custom-button {
+        height: 36px;
+        width: 100px;
+        font-size: 13px;
+    }
+    .cover-text > h1,
+    .welcome-text > h1 {
+        font-size: 22px;
+    }
+    .sitelogo > img {
+        width: 18px;
+    }
+/* ==================== HERO ==================== */
+    .cover-text {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .cover-text > h2 {
+        font-size: 14px;
+        padding: 0 0 30px;
+    }
+/* ==================== WELCOME ==================== */
+    .welcome-text p {
+        font-size: 13px;
+    }
+/* ==================== COMPANIES ==================== */
+    .companies > h2 {
+        font-size: 19px;
+    }
+    .companies > #companies-logo img {
+        width: 200px;
+    }
+    .companies {
+        padding: 20px 70px 0;
+        text-align: center;
+    }
+/* ==================== COMMITMENT ==================== */
+    .commitment-text {
+        padding: 100px 15px;
+    }
+    .commitment-text > h1 {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+/* ==================== BLOG ==================== */
+    .blog-preview {
+        padding: 20px 60px 30px;
+    }
+    .blog-preview > h2 {
+        font-size: 19px;
+        margin-bottom: 0;
+        padding-bottom: 3px;
+    }
+    .blog-preview > p {
+        font-size: 11px;
+    }
+    .blog-preview > .blogs {
+        padding: 20px 0;
+    }
+    .blog-preview > .blogs > h4 {
+        font-size: 14px;
+    }
+    .blog-preview > .blogs > p {
+        font-size: 13px;
+    }
+/* ==================== FOOTER ==================== */
+    .footer > #main-footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .footer #links {
+        padding: 35px 0;
+    }
+    .footer .icon {
+        width: 20px;
+    }
+    .footer #add-icon {
+        width: 15px;
+    }
+    .footer input {
+        width: 250px;
+        margin-bottom: 10px;
+        padding: 5px 2px;
+    }
+    .footer button {
+        padding: 6px 4px;
+    }
+    .footer #register {
+        padding-bottom: 20px;
+    }
+    .footer > .row #logo {
+        width: 200px;
+        padding-bottom: 25px;
+    }
+    .footer > #developed {
+        font-size: 12px;
+        padding: 0 10px 15px 0;
+    }
+}
+
+/* ==================== FONTS ==================== */
+/* Fonts */
+@font-face {
+    font-family: 'HeroBold';
+    src: url('../fonts/ITCAvantGardePro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeroStd';
+    src: url('../fonts/ITCAvantGardeStd-Demi.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
