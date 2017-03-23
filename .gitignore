@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.idea
+.esio
+*.sqlite3
+*pyc
+__pycache__
+DNS.docx
+staticfiles
+tmp
