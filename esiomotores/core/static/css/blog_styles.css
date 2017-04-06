@@ -38,7 +38,8 @@ Cinza Claro Últimas Notícias -> rgb(124,124,124)
 }
 .blog-sidebar .affix {
     top: 10px;
-    width: 190px;
+    max-width: 165px;
+    /*width: 190px;*/
 }
 .blog-link-buttons {
     padding-top: 20px;
@@ -67,7 +68,7 @@ Cinza Claro Últimas Notícias -> rgb(124,124,124)
 
 
 /* ==================== Telas - col-sm (tablet) e SUPERIORES ==================== */
-@media only screen and (max-width: 1080px) and (min-width: 771px) {
+@media only screen and (max-width: 1000px) and (min-width: 771px) {
     .blog-sidebar .affix {
         position: static;
     }
