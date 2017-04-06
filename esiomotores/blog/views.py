@@ -87,7 +87,7 @@ def showSearchPage(request, page, search):
     page = int(page)
     category = 'pesquisa'
     qs = Blogs.objects.prefetch_related('contents_set').filter(publish=True)
-    qs = qs.filter(Q(title__contains=search) | Q(contents__text__contains=search)).distinct()
+    qs = qs.filter(Q(title__icontains=search) | Q(contents__text__icontains=search)).distinct()
     qs = qs.filter(~Q(contents__text='Não existe conteúdo cadastrado para esta categoria.'))
 
     try:
