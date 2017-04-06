@@ -76,25 +76,25 @@
                 {% csrf_token %}
                 <div class="form-group form-group-lg col-xs-12 col-md-12">
                     <label for="{{ form.name.id_for_label }}">{{ form.name.label }}</label>
-                    {{ form.name.errors | striptags }}
                     {{ form.name | add_attributes:'class:form-control,placeholder:João Nogueira' }}
+                    <span class="label label-danger">{{ form.name.errors | striptags }}</span>
                 </div>
                 <div class="form-group form-group-lg col-xs-12 col-md-6">
                     <label for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
-                    {{ form.email.errors | striptags }}
                     {{ form.email | add_attributes:'class:form-control,placeholder:meuemail@xyz.com.br' }}
+                    <span class="label label-danger">{{ form.email.errors | striptags }}</span>
                 </div>
                 <div class="form-group form-group-lg col-xs-12 col-md-6">
                     <label for="{{ form.phone.id_for_label }}">{{ form.phone.label }}</label>
                     <span class="label label-warning">somente números</span>
-                    {{ form.phone.errors | striptags }}
                     {{ form.phone | add_attributes:'class:form-control,placeholder:(99) 9999-9999' }}
+                    <span class="label label-danger">{{ form.phone.errors | striptags }}</span>
                 </div>
                 <div class="form-group form-group-lg col-xs-12 col-md-12">
                     <label for="{{ form.msg.id_for_label }}">{{ form.msg.label }}</label>
                     <span class="label label-warning">limitado a 700 caracteres</span>
-                    {{ form.msg.errors | striptags }}
                     {{ form.msg | add_attributes:'class:form-control,placeholder:Escreva aqui sua mensagem...' }}
+                    <span class="label label-danger">{{ form.msg.errors | striptags }}</span>
                 </div>
                 <button type="submit" class="btn btn-success btn-lg col-xs-offset-2 col-xs-3">Enviar</button>
                 <button type="reset" class="btn btn-danger btn-lg col-xs-offset-2 col-xs-3">Apagar</button>
