@@ -19,28 +19,28 @@ Cinza Claro Últimas Notícias -> rgb(124,124,124)
 #hero-about {
     background: url("../img/01-hero_bg.jpg") center center no-repeat;
     background-size: cover;
-    display: table;
+    display: block;
     width: 100%;
     box-shadow: inset 0 0 100px #000;
 }
 #hero-solutions {
     background: url("../img/02-hero_bg.jpg") center center no-repeat;
     background-size: cover;
-    display: table;
+    display: block;
     width: 100%;
     box-shadow: inset 0 0 100px #000;
 }
 #hero-contact {
     background: url("../img/04-hero_bg.jpg") center center no-repeat;
     background-size: cover;
-    display: table;
+    display: block;
     width: 100%;
     box-shadow: inset 0 0 100px #000;
 }
 #hero-blog {
     background: url("../img/03-hero_bg.jpg") center center no-repeat;
     background-size: cover;
-    display: table;
+    display: block;
     width: 100%;
     box-shadow: inset 0 0 100px #000;
 }

@@ -208,7 +208,7 @@ body {
     text-decoration: none;
     color: white;
 }
-.footer p {
+.footer #main-footer p {
     text-align: left;
 }
 .footer form {
@@ -230,7 +230,7 @@ body {
 .footer > .row > #register > p {
     color: rgb(18,187,184);
 }
-.footer > #developed {
+.footer #developed {
     font-family: HeroStd;
     text-align: right;
 }
@@ -327,11 +327,10 @@ body {
     }
 /* ==================== FOOTER ==================== */
     .footer > #main-footer {
-        padding-top: 40px;
-        padding-bottom: 15px;
+        padding-top: 25px;
     }
     .footer p {
-        font-size: 18px;
+        font-size: 14px;
     }
     .footer #links {
         padding-left: 0;
@@ -347,21 +346,21 @@ body {
         width: 15px;
     }
     .footer input {
-        width: 305px;
+        width: 260px;
         margin-bottom: 10px;
         padding: 2px 5px;
-        font-size: 20px;
+        font-size: 14px;
     }
     .footer button {
-        padding: 10px;
+        padding: 5px;
     }
     .footer > .row #logo {
-        width: 300px;
+        width: 250px;
         padding-bottom: 25px;
     }
     .footer > #developed {
-        font-size: 15px;
-        padding: 0 10px 15px 0;
+        font-size: 13px;
+        padding: 0 10px 10px 0;
     }
     .footer #add-content {
         padding-bottom: 15px;
@@ -486,10 +485,9 @@ body {
 /* ==================== FOOTER ==================== */
     .footer > #main-footer {
         padding-top: 25px;
-        padding-bottom: 25px;
     }
     .footer p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .footer #add-content {
         padding-bottom: 0;
@@ -504,19 +502,19 @@ body {
         width: 15px;
     }
     .footer input {
-        width: 300px;
+        width: 260px;
         margin-bottom: 10px;
         padding: 6px 3px;
     }
     .footer button {
-        padding: 6px 4px;
+        padding: 4px;
     }
     .footer > .row #logo {
-        width: 250px;
+        width: 230px;
         padding-bottom: 25px;
     }
     .footer > #developed {
-        font-size: 13px;
+        font-size: 12px;
         padding: 0 10px 15px 0;
     }
 }
@@ -613,7 +611,7 @@ body {
         padding: 5px 2px;
     }
     .footer button {
-        padding: 6px 4px;
+        padding: 4px;
     }
     .footer #register {
         padding-bottom: 20px;
