@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mtitle %}Esio Motores - institucional{% endblock %}
+{% block mdescription %}Conheça um pouco mais sobre a nossa história.{% endblock %}
+{% block murl %}http://www.esiomotores.com.br/institucional/{% endblock %}
+{% block title %}Institucional - Esio Motores{% endblock %}
+{#{% block canonical %}<link rel="canonical" href="http://www.esiomotores.com.br/institucional/">{% endblock %}#}
+
+{% block css %}
+<link href="{% static 'css/inside_styles.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block hero %}
+    <div id="hero-about" class="inside-hero-bg">
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="intern-content" class="container-fluid">
+        <div class="sitelogo"><img src="{% static 'img/00-watermark.png' %}" class="img-responsive"></div>
+        <h2>Nossa História</h2>
+        <img src="{% static 'img/01-gen-underline.png' %}" class="underline center-block">
+        <div class="row">
+            <div class="col-xs-12 col-lg-3">
+                <div id="about-box1" class="about-box"></div>
+                <div id="about-box3" class="about-box"></div>
+            </div>
+
+            <div class="col-xs-12 col-lg-3">
+                <div id="about-box2" class="about-box"></div>
+                <div id="about-box4" class="about-box"></div>
+            </div>
+
+            <div id="about-text" class="col-xs-12 col-lg-6">
+                <p align="justify">
+                    Esio Motores começou sua história com o talento e a perseverança de Esio Gil Coutinho que, em 2004,
+                    ao fundar uma empresa de manutenção e reparação de máquinas e equipamentos de implementos agrícolas
+                    em Itaperuna (município do Noroeste Fluminense/RJ), deu a largada para o desenvolvimento de uma
+                    empresa baseado no compromisso com a qualidade, dedicação em tempo integral e responsabilidade na
+                    prestação de serviços.
+                </p>
+
+                <p align="justify">
+                    Esio Motores está no mercado de irrigação há 13 anos, sendo responsável por inúmeros projetos de
+                    irrigação. Devido a esta experiência podemos dizer que estamos aptos a desenvolver o melhor projeto,
+                    avalizados pelos nossos clientes.
+                </p>
+
+                <p align="justify">
+                    Com utilização de alta tecnologia, oferecemos as melhores soluções em irrigação para o agronegócio,
+                    visando garantia de produção e aumento de produtividade de maneira sustentável.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

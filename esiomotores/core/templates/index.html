@@ -6,8 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Esio Motores" />
+    <meta property="og:description" content="Sua referência em irrigação!" />
+    <meta property="og:image" content="{% static 'img/00-logo-tumb.png' %}" />
+    <meta property="og:url" content="http://www.esiomotores.com.br/" />
+    <meta property="og:site_name" content="Esio Motores" />
+
+{#    <link rel="canonical" href="http://www.esiomotores.com.br/">#}
+
     <title>Esio Motores</title>
-    <link rel="shortcut icon" href="{% static 'img/logo.ico' %}" type="image/x-icon">
+
+    {# Fav Icons #}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="{% static 'img/manifest.json' %}">
+    <link rel="mask-icon" href="{% static 'img/safari-pinned-tab.svg' %}" color="#362369">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+    <meta name="msapplication-config" content="{% static 'img/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
     <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -21,37 +41,16 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="{% static 'img/00-logo.png' %}" alt="Esio Motores">
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Institucional</a></li>
-            <li><a href="#">Soluções</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav><!-- END OF NAVBAR -->
+    {% include 'nav.html' only %}
 
     <div class="cover">
       <div class="cover-text col-sm-offset-2 col-sm-8">
         <h1>tenha o controle do</h1>
         <h1>seu sistema de irrigação</h1>
         <h2>Oferecemos soluções inovadoras</h2>
-        <button class="btn-lg custom-button">Saiba mais</button>
+        <form action="solucoes/" method="get">
+          <button class="btn-lg custom-button">Saiba mais</button>
+        </form>
       </div>
     </div><!-- end of COVER -->
 
@@ -65,7 +64,9 @@
             estamos aptos a desenvolver o melhor projeto, avalizados pelos nossos clientes.
           </p>
         </div>
-        <button class="btn-lg custom-button">Saiba mais</button>
+        <form action="institucional/" method="get">
+          <button class="btn-lg custom-button">Saiba mais</button>
+        </form>
       </div>
     </div><!-- end of WELCOME -->
 
@@ -107,98 +108,20 @@
         <div class="sitelogo"><img src="{% static 'img/00-watermark.png' %}" class="img-responsive"></div>
         <h2>Últimas Notícias</h2>
         <p>aqui você encontra as principais informações sobre o setor</p>
-        <div class="blogs col-md-4">
-            <h4 class="text-justify">Título</h4>
-            <p class="text-justify">
-                Aqui entrará o preview de cada notícia de forma dinâmica,
-                com o conteúdo sendo carregado do banco de dados. A cada notícia nova,
-                uma nova página será exibida.
-            </p>
-            <button>Leia mais</button>
-        </div>
-        <div class="blogs col-md-4">
-            <h4 class="text-justify">Título</h4>
-            <p class="text-justify">
-                Aqui entrará o preview de cada notícia de forma dinâmica,
-                com o conteúdo sendo carregado do banco de dados. A cada notícia nova,
-                uma nova página será exibida.
-            </p>
-            <button>Leia mais</button>
-        </div>
-        <div class="blogs col-md-4">
-            <h4 class="text-justify">Título</h4>
-            <p class="text-justify">
-                Aqui entrará o preview de cada notícia de forma dinâmica,
-                com o conteúdo sendo carregado do banco de dados. A cada notícia nova,
-                uma nova página será exibida.
-            </p>
-            <button>Leia mais</button>
-        </div>
+        {% for blog in blog_preview %}
+            <div class="blogs col-md-4">
+                <h4 class="text-justify">{{ blog.title }}</h4>
+                <p class="text-justify">{{ blog.preview | truncatewords:'15' }}</p>
+                <a href="noticia/{{ blog.slug}}" class="btn btn-default">Leia mais</a>
+            </div>
+        {% endfor %}
     </div><!-- end of BLOG-PREVIEW -->
 
     <iframe width="100%" height="350" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?q=21%C2%B012'42.9%22S%2041%C2%B051'53.0%22W&key=AIzaSyB_A_anxXZrrFeHPMAyvTX_gyV5HBiprQ4" allowfullscreen>
     </iframe><!-- end of MAPS -->
 
-    <div class="footer container-fluid">
-      <div id="main-footer" class="row">
-
-        <div id="address" class="col-md-offset-1 col-md-4">
-          <img id="logo" src="{% static 'img/00-logo.png' %}">
-          <div class="row">
-            <div class="col-md-1">
-              <img id="add-icon" class="icon" src="{% static 'img/00-address_icon.png' %}">
-            </div>
-            <div id="add-content" class="col-md-11">
-              <p>
-                Rua Cel. José Bastos, 1284 <br>
-                Bairro Marechal Castelo Branco <br>
-                Itaperuna-RJ 28300-000
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1">
-              <img class="icon" src="{% static 'img/00-phone_icon.png' %}">
-            </div>
-            <div class="col-md-11">
-              <p>(22) 3824-1085</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1">
-              <img class="icon" src="{% static 'img/00-whatsapp_icon.png' %}">
-            </div>
-            <div class="col-md-11">
-              <p>(22) 99931-7684</p>
-            </div>
-          </div>
-        </div><!-- end of column ADDRESS -->
-
-        <div class="col-md-3">
-          <div id="links" class="col-md-offset-2 col-md-4">
-            <p id="home"><a href="#">Home</a></p>
-            <p><a href="#">Institucional</a></p>
-            <p><a href="#">Soluções</a></p>
-            <p><a href="#">Notícias</a></p>
-            <p><a href="#">Contato</a></p>
-          </div>
-        </div><!-- end of column MENU -->
-
-        <div id="register" class="col-md-4">
-          <p>Cadastre-se e fique por dentro das nossas novidades:</p>
-          <form class="col-md-7">
-            <input type="text" class="col-md-4" id="form-name" placeholder="nome" maxlength="60">
-            <input type="email" id="form-email" placeholder="email" maxlength="60">
-            <button type="submit" class="col-md-offset-8 col-md-4">ENVIAR</button>
-          </form>
-        </div>
-      </div><!-- end of column REGISTER -->
-
-      <div id="developed" class="row">
-        Desenvolvido por <a id="link" href="mailto:tonare@gmail.com">Renato Padilha</a>
-      </div>
-    </div><!-- end of FOOTER -->
+    {% include 'footer.html' %}
 
     <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

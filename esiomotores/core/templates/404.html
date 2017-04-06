@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mtitle %}Esio Motores - erro 404{% endblock %}
+{% block mdescription %}Página não encontrada{% endblock %}
+{% block title %}Esio Motores - erro 404{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div id="errors" class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h1>404</h1>
+                <h2>Página não encontrada</h2>
+                <p class="lead">O endereço que você solicitou não existe.</p>
+            </div><!-- end ERRORS -->
+        </div><!-- end ROW -->
+    </div><!-- end CONTAINER -->
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer_simple.html' %}
+{% endblock %}

@@ -1,0 +1,9 @@
+Olá,
+Foi recebida uma nova mensagem do IP {{ contact.ipaddr }}, com o seguinte conteúdo:
+
+Nome: {{ contact.name }}
+Telefone: {{ contact.phone }}
+E-mail: {{ contact.email }}
+Mensagem: {{ contact.msg }}
+
+Para respondê-lo, basta clicar em responder, ou se preferir, ligar no telefone informado pelo mesmo.

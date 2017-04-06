@@ -1,0 +1,79 @@
+#contact-panel{
+    font-family: Arial, Helvetica, SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(54,67,78);
+    margin: 30px 0;
+}
+.form-panel {
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 20px rgb(54,35,105);
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    #intern-content {
+        padding: 0;
+        margin: 20px 15px 0;
+    }
+    .form-panel {
+        font-size: 12px;
+    }
+    .form-panel button {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #intern-content {
+        padding: 0;
+        margin: 20px 10px 0;
+    }
+    .form-panel button {
+        font-size: 12px;
+        padding-left: 13px;
+    }
+    .form-panel .form-group input,
+    .form-panel .form-group textarea{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #intern-content {
+        padding: 0;
+        margin: 20px 20px 0;
+    }
+    .form-panel button {
+        padding-left: 8px;
+    }
+    .form-panel .form-group input,
+    .form-panel .form-group textarea{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #intern-content {
+        padding: 0;
+        margin: 20px 10px 0;
+    }
+    .form-panel button {
+        padding-left: 3px;
+    }
+    .form-panel .form-group input {
+        height: 30px;
+        font-size: 14px;
+        padding: 0 0 0 5px;
+        margin-top: 5px;
+    }
+
+    .form-panel .form-group textarea {
+        font-size: 14px;
+        padding: 0 0 0 5px;
+        margin-top: 5px;
+    }
+}

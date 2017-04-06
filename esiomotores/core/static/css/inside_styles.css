@@ -1,0 +1,332 @@
+/*
+CORES
+=====
+Roxo -> rgb(54,35,105)
+Verde Água -> rgb(18,187,184)
+Verde Claro Hero -> rgb(111,163,17)
+Cinza Escuro Bem Vindo // Ultimas Notícias // Preview Blog -> rgb(54,67,78)
+Cinza Claro Revendedor -> rgb(209,209,210)
+Cinza Claro Últimas Notícias -> rgb(124,124,124)
+
+*/
+
+
+/* ==================== Configurações independentes de tamanho de tela ==================== */
+/* ==================== HERO ==================== */
+.inside-hero-bg {
+    padding: 75px 0;
+}
+#hero-about {
+    background: url("../img/01-hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+}
+#hero-solutions {
+    background: url("../img/02-hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+}
+#hero-contact {
+    background: url("../img/04-hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+}
+#hero-blog {
+    background: url("../img/03-hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+}
+/* ==================== CONTENT ==================== */
+#intern-content {
+    padding: 30px 110px 50px;
+}
+#intern-content h2 {
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#intern-content .row {
+    padding-top: 30px;
+}
+#intern-content .underline {
+    max-width: 140px;
+}
+/* ==================== ABOUT ==================== */
+#about-box1 {
+    background: url("../img/01-square-01.png") center center no-repeat;
+}
+#about-box2 {
+    background: url("../img/01-square-02.png") center center no-repeat;
+}
+#about-box3 {
+    background: url("../img/01-square-03.png") center center no-repeat;
+}
+#about-box4 {
+    background: url("../img/01-square-04.png") center center no-repeat;
+}
+#about-text p {
+    line-height: 2;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+    #intern-content .row .col-lg-3 .about-box {
+        height: 220px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #about-box1 {
+        margin-bottom: 40px;
+    }
+    #about-box2 {
+        margin-bottom: 40px;
+    }
+/* ==================== SOLUTIONS ==================== */
+.solutions-text {
+    line-height: 2;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.solutions-logo {
+    height: 128px;
+    width: 128px;
+}
+#logo-gotejamento {
+    background: url("../img/02-gotejamento.png") center center no-repeat;
+    background-size: 70%;
+}
+#logo-micro-aspersao {
+    background: url("../img/02-micro-aspersão.png") center center no-repeat;
+    background-size: 70%;
+}
+#logo-aspersao {
+    background: url("../img/02-aspersão.png") center center no-repeat;
+    background-size: 70%;
+}
+.gotejamento h3,
+.microaspersao h3,
+.aspersao h3 {
+    color: rgb(54,35,105);
+}
+.info a {
+    color: rgb(54,35,105);
+    text-decoration: underline;
+}
+.info a:hover {
+    background-color: rgb(54,35,105);
+    color: white;
+}
+.modal p {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.modal h4 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* ==================== Telas - col-LG (large desktop) ==================== */
+/*@media only screen and (max-width: 1200px) {*/
+@media only screen and (min-width: 1200px) {
+    #intern-content {
+        padding: 20px 50px 0;
+    }
+/* ==================== SOLUTIONS ==================== */
+    .gotejamento h3,
+    .microaspersao h3,
+    .aspersao h3 {
+        text-align: left;
+    }
+    .solutions-text {
+        line-height: 2;
+        font-size: 17px;
+        padding-bottom: 0;
+    }
+    .gotejamento,
+    .microaspersao,
+    .aspersao {
+        padding-bottom: 10px;
+    }
+    .aspersao {
+        padding-bottom: 25px;
+    }
+    .modal {
+        margin: 0 auto;
+        width: 900px;
+    }
+}
+
+/* ==================== Telas - col-MD (desktop) ==================== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* ==================== ABOUT ==================== */
+    .about-box {
+        display: none;
+    }
+/* ==================== SOLUTIONS ==================== */
+    #logo-gotejamento,
+    #logo-micro-aspersao,
+    #logo-aspersao {
+        background-size: 50%;
+    }
+    .modal {
+        margin: 0 auto;
+    }
+}
+
+/* ==================== Telas - col-sm (tablet) e SUPERIORES ==================== */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* ==================== CONTENT ==================== */
+    #intern-content h2 {
+        font-size: 28px;
+    }
+/* ==================== ABOUT ==================== */
+    .about-box {
+        display: none;
+    }
+/* ==================== SOLUTIONS ==================== */
+    .solutions-logo {
+        height: 80px;
+        width: 80px;
+    }
+    #logo-gotejamento,
+    #logo-micro-aspersao,
+    #logo-aspersao {
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+    .gotejamento .col-md-10,
+    .microaspersao .col-md-10,
+    .aspersao .col-md-10 {
+        padding: 0;
+    }
+    .gotejamento h3,
+    .microaspersao h3,
+    .aspersao h3 {
+        font-size: 23px;
+        padding: 0;
+    }
+}
+
+
+/* ==================== Telas - INFERIORES a col-sm (tablet) e MAIORES que 495px ==================== */
+@media only screen and (max-width: 767px) {
+/* ==================== CONTENT ==================== */
+    #intern-content h2 {
+        font-size: 24px;
+    }
+    #intern-content .underline {
+        max-width: 110px;
+    }
+/* ==================== ABOUT ==================== */
+    #intern-content {
+        padding: 20px 50px 0;
+    }
+    #about-text {
+        padding: 0;
+        margin: 0;
+    }
+    #about-text p {
+        line-height: 2;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    .about-box {
+        display: none;
+    }
+/* ==================== SOLUTIONS ==================== */
+    .solutions-logo {
+        height: 60px;
+        width: 60px;
+    }
+    #logo-gotejamento,
+    #logo-micro-aspersao,
+    #logo-aspersao {
+        margin: 0 auto;
+    }
+    .solutions-text {
+        line-height: 2;
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+    .gotejamento h3,
+    .microaspersao h3,
+    .aspersao h3 {
+        font-size: 21px;
+        text-align: center;
+    }
+    .gotejamento p,
+    .microaspersao p,
+    .aspersao p {
+        text-align: center;
+    }
+    .aspersao {
+        padding-bottom: 25px;
+    }
+}
+
+
+/* ==================== Telas - IGUAIS ou INFERIORES 495px ==================== */
+@media only screen and (max-width: 495px) {
+/* ==================== CONTENT ==================== */
+    #intern-content {
+        padding: 20px 50px 0;
+    }
+    #intern-content h2 {
+        font-size: 19px;
+    }
+    #intern-content .underline {
+        max-width: 85px;
+    }
+/* ==================== ABOUT ==================== */
+    #about-text {
+        padding: 0;
+        margin: 0;
+    }
+    #about-text p {
+        line-height: 2;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+/* ==================== SOLUTIONS ==================== */
+    .solutions-text {
+        line-height: 2;
+        font-size: 15px;
+        padding-bottom: 0;
+    }
+    .solutions-logo {
+        height: 60px;
+        width: 60px;
+    }
+    .gotejamento h3,
+    .microaspersao h3,
+    .aspersao h3 {
+        font-size: 19px;
+    }
+}
+
+
+/* ==================== FONTS ==================== */
+/* Fonts */
+@font-face {
+    font-family: 'HeroBold';
+    src: url('../fonts/ITCAvantGardePro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeroStd';
+    src: url('../fonts/ITCAvantGardeStd-Demi.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

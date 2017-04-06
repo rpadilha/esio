@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="{% block mtitle %}{% endblock %}" />
+        <meta property="og:description" content="{% block mdescription %}{% endblock %}" />
+        <meta property="og:image" content="{% static 'img/00-logo-tumb.png' %}" />
+        <meta property="og:url" content="{% block murl %}{% endblock %}" />
+        <meta property="og:site_name" content="Esio Motores" />
+
+        <title>{% block title %}{% endblock %}</title>
+
+        {% block canonical %}{% endblock %}
+
+        {# Fav Icons #}
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'img/manifest.json' %}">
+        <link rel="mask-icon" href="{% static 'img/safari-pinned-tab.svg' %}" color="#362369">
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+        <meta name="msapplication-config" content="{% static 'img/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Common CSS -->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        {% block css %}{% endblock %}
+
+        <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+	<body>
+        {% include 'nav.html' only %}
+
+        {% block hero %}{% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block footer %}
+        {% endblock %}
+
+        <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+        <!-- Customs scripts -->
+        <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+    </body>
+</html>

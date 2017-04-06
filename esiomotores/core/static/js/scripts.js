@@ -3,3 +3,9 @@ $(document).ready(function () {
 				    $(this).toggleClass("active");
 			  });
 		});
+
+$('#nav-affix').affix({
+    offset: {
+        top: $('#nav-affix').offset().top
+    }
+});

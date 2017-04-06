@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mtitle %}Esio Motores - erro 403{% endblock %}
+{% block mdescription %}Proibido{% endblock %}
+{% block title %}Esio Motores - erro 403{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div id="errors" class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <h1>403</h1>
+                <h2>Proibido</h2>
+                <p class="lead">Você não tem permissão para acessar este endereço.</p>
+            </div><!-- end ERRORS -->
+        </div><!-- end ROW -->
+    </div><!-- end CONTAINER -->
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer_simple.html' %}
+{% endblock %}

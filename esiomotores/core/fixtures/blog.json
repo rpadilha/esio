@@ -1,0 +1,222 @@
+[
+{
+    "model": "blog.blogs",
+    "pk": "assento-infantil-dudu-baby-durin",
+    "fields": {
+        "title": "Assento Infantil Dudu Baby Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-02-24T16:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "assento-sanitario-especial-para-cadeiras-de-banho",
+    "fields": {
+        "title": "Assento Sanit\u00e1rio Especial Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-03-10T14:12:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "assentos-infantis-coloridos-dudu-baby-durin",
+    "fields": {
+        "title": "Assentos Infantis coloridos Dudu Baby Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-03-03T21:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "campanha-do-sifao-durin-marco17",
+    "fields": {
+        "title": "Campanha do Sif\u00e3o Dur\u00edn - Mar\u00e7o/17",
+        "category": "promocoes",
+        "publish": true,
+        "created_at": "2017-03-14T14:12:52.677Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "catalogos",
+    "fields": {
+        "title": "Cat\u00e1logos",
+        "category": "catalogos",
+        "publish": true,
+        "created_at": "2016-10-10T13:10:10Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "durin-da-feicon-batimat-2017",
+    "fields": {
+        "title": "Dur\u00edn na Feicon Batimat 2017",
+        "category": "eventos",
+        "publish": true,
+        "created_at": "2017-03-16T14:50:49.983Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "engates-e-reparador-durin",
+    "fields": {
+        "title": "Engates e Reparador Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-01-13T15:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "kits-para-caixa-acoplada-durin",
+    "fields": {
+        "title": "Kits para caixa acoplada Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2016-10-21T13:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "linha-completa-de-duchas-e-acessorios-durin",
+    "fields": {
+        "title": "Linha completa de Duchas e acess\u00f3rios Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2016-12-02T15:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "mangueira-para-gas-glp-durin",
+    "fields": {
+        "title": "Mangueira para g\u00e1s (GLP) Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-02-10T13:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "mangueira-siliconada-e-suporte-fixo-durin",
+    "fields": {
+        "title": "Mangueira Siliconada e Suporte Fixo Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-03-03T22:12:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "outros",
+    "fields": {
+        "title": "Outros",
+        "category": "outros",
+        "publish": true,
+        "created_at": "2016-10-10T13:10:10Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "parafuso-para-fixacao-de-louca-sanitaria-durin",
+    "fields": {
+        "title": "Parafuso para fixa\u00e7\u00e3o de lou\u00e7a sanit\u00e1ria Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-03-10T18:12:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "promocao-durin-fevereiro17",
+    "fields": {
+        "title": "Promo\u00e7\u00e3o Dur\u00edn - Fevereiro/17",
+        "category": "promocoes",
+        "publish": false,
+        "created_at": "2017-02-13T20:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "promocao-durin-janeiro17",
+    "fields": {
+        "title": "Promo\u00e7\u00e3o Dur\u00edn - Janeiro/17",
+        "category": "promocoes",
+        "publish": false,
+        "created_at": "2017-01-12T14:25:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "promocao-gamma-ferramentas-fevereiro17",
+    "fields": {
+        "title": "Promo\u00e7\u00e3o Gamma Ferramentas - Fevereiro/17",
+        "category": "promocoes",
+        "publish": false,
+        "created_at": "2017-02-13T20:30:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "promocao-gamma-ferramentas-janeiro17",
+    "fields": {
+        "title": "Promo\u00e7\u00e3o Gamma Ferramentas - Janeiro/17",
+        "category": "promocoes",
+        "publish": false,
+        "created_at": "2017-01-12T14:15:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "promocao-gamma-ferramentas-marco17",
+    "fields": {
+        "title": "Promo\u00e7\u00e3o Gamma Ferramentas - Mar\u00e7o/17",
+        "category": "promocoes",
+        "publish": true,
+        "created_at": "2017-03-03T15:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "seja-bem-vindo-ao-portal-da-rvp-representacao",
+    "fields": {
+        "title": "Seja bem-vindo ao portal da RVP Representa\u00e7\u00e3o!",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2016-10-01T13:10:10Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "suporte-fixo-para-mangueiras-durin",
+    "fields": {
+        "title": "Suporte fixo para mangueiras Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2016-12-16T20:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "valvula-americana-durin",
+    "fields": {
+        "title": "V\u00e1lvula Americana Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2017-02-06T20:38:47Z"
+    }
+},
+{
+    "model": "blog.blogs",
+    "pk": "valvulas-para-pia-tanque-e-lavatorio-durin",
+    "fields": {
+        "title": "V\u00e1lvulas para pia, tanque e lavat\u00f3rio Dur\u00edn",
+        "category": "novidades",
+        "publish": true,
+        "created_at": "2016-12-12T20:38:47Z"
+    }
+}
+]

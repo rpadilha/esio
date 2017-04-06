@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block mtitle %}Esio Motores - soluções{% endblock %}
+{% block mdescription %}Tenha o controle do seu sistema de irrigação!{% endblock %}
+{% block murl %}http://www.esiomotores.com.br/solucoes/{% endblock %}
+{% block title %}Soluções - Esio Motores{% endblock %}
+{#{% block canonical %}<link rel="canonical" href="http://www.esiomotores.com.br/solucoes/">{% endblock %}#}
+
+{% block css %}
+<link href="{% static 'css/inside_styles.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block hero %}
+    <div id="hero-solutions" class="inside-hero-bg">
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="intern-content" class="container">
+        <div class="sitelogo"><img src="{% static 'img/00-watermark.png' %}" class="img-responsive"></div>
+        <h2>Soluções</h2>
+        <img src="{% static 'img/01-gen-underline.png' %}" class="underline center-block">
+
+        <div class="row">
+            <p class="solutions-text" align="justify">
+                Nossos engenheiros e técnicos são especialistas em irrigação, possuindo grande experiência em estudos
+                de viabilidade técnica, desenvolvimento de projetos, dimensionamento, instalação e manutenção de
+                sistemas irrigados.
+            </p>
+        </div>
+
+        <div class="row gotejamento">
+            <div id="logo-gotejamento" class="col-sm-2 solutions-logo">
+            </div>
+            <div class="col-sm-10">
+                <h3>Gotejamento</h3>
+                <p class="solutions-text" align="justify">
+                    Gotejamento é o método de irrigação que possui maior eficiência e precisão resultando economia de água
+                    e fertilizante.
+                </p>
+                <p class="info" align="right"><a data-toggle="modal" data-target="#gotejamento" href="#">Informações técnicas</a></p>
+            </div>
+        </div><!-- end of GOTEJAMENTO -->
+
+        <div class="row microaspersao">
+            <div id="logo-micro-aspersao" class="col-sm-2 solutions-logo">
+            </div>
+            <div class="col-sm-10">
+                <h3>Microaspersão</h3>
+                <p class="solutions-text" align="justify">
+                    A Microapersão é uma ótima opção para pomares, estufas e hortaliças.
+                </p>
+                <p class="info" align="right"><a data-toggle="modal" data-target="#micro-aspersao" href="#">Informações técnicas</a></p>
+            </div>
+        </div><!-- end of MICRO-ASPERSÃO -->
+
+        <div class="row aspersao">
+            <div id="logo-aspersao" class="col-sm-2 solutions-logo">
+            </div>
+            <div class="col-sm-10">
+                <h3>Aspersão</h3>
+                <p class="solutions-text" align="justify">
+                    A Aspersão convencional é muito utilizada em culturas como milho, cana-de-açucar, etc.
+                </p>
+                <p class="info" align="right"><a data-toggle="modal" data-target="#aspersao" href="#">Informações técnicas</a></p>
+            </div>
+        </div><!-- end of ASPERSÃO -->
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="gotejamento">
+        <div class="modal-dialogm modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title"><span class="glyphicon glyphicon glyphicon-info-sign"></span> Gotejamento</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p align="justify">
+                        O gotejamento é uma forma de irrigação localizada, usada em uma grande variedade de culturas, ao
+                        redor do mundo. Permite a aplicação de fertilizantes adicionados à água, consistindo na fertirrigação.
+                    </p>
+                    <p align="justify">
+                        A aplicação da água ocorre a partir dos gotejadores dispostos ao longo do tubo gotejador.
+                        O tubo gotejador pode ser instalado na superfície do terreno ou abaixo da superfície.
+                    </p>
+                    <p align="justify">
+                        A vazão e o espaçamento entre os gotejadores dependem das características do solo, tipo de cultura
+                        e características climáticas locais. De acordo com a necessidade, os tubos gotejadores podem ser
+                        fabricados com diferentes espessuras de parede, espaçamento entre emissores, valores de vazão e com
+                        sistemas de pressão compensado. A irrigação por gotejamento apresenta vantagens importantes, pois
+                        é o sistema de irrigação com a melhor eficiência de distribuição de água.
+                    </p>
+                    <p align="justify">
+                        Possui um coeficiente de eficácia da ordem de 90%. É utilizado principalmente em culturas
+                        perenes e em fruticultura, embora também seja usado por produtores de hortaliças e flores,
+                        considerando a reduzida necessidade de água, comparada aos demais sistemas de irrigação. Esse
+                        sistema aplica baixas vazões com altas frequências, muitas vezes diárias, umedecendo um volume
+                        de solo menor do que os outros sistemas, o que reduz as perdas por evaporação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="micro-aspersao">
+        <div class="modal-dialogm modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title"><span class="glyphicon glyphicon glyphicon-info-sign"></span> Microaspersão</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p align="justify">
+                        A microaspersão é uma ótima opção para irrigar pomares, estufas e hortaliças.
+                    </p>
+                    <p align="justify">
+                        Existem várias configurações de microaspersores que permitem uma ampla gama de vazões, alcances
+                        e tipos de montagem, atendendo irrigações de campo aberto e de estufas.
+                    </p>
+                    <p align="justify">
+                        Nossos microaspersores são projetados para serem facilmente desmontados, permitindo tanto a
+                        manutenção de campo, quanto a substituição de peças individuais. Existem também opcionais,
+                        como proteção anti-inseto, protetor de tronco (que evita molhar o tronco das árvores), e kits
+                        para montagem invertida.
+                    </p>
+                    <p align="justify">
+                        O sistema de microaspersão possui fácil adaptação às diversas condições topográficas. É
+                        indicado para diversas culturas, especialmente em fruticultura, jardins e irrigação em casas de
+                        vegetação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="aspersao">
+        <div class="modal-dialogm modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title"><span class="glyphicon glyphicon glyphicon-info-sign"></span> Aspersão</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p align="justify">
+                        O equipamento de aspersão convencional pode ser móvel, sendo os tubos e aspersores movimentados
+                        de uma área para outra a ser irrigada; ou pode ser fixo, onde toda a malha hidráulica e os
+                        aspersores necessários para irrigar a área toda ficam instalados.
+                    </p>
+                    <p align="justify">
+                        O segredo de um bom sistema de aspersão convencional está em fazer um bom dimensionamento do
+                        equipamento e usar componentes confiáveis.
+                    </p>
+                    <p align="justify">
+                        O custo operacional deve ser levado em consideração na escolha do tipo de sistema - móvel ou fixo. 
+                        O sistema móvel tem um custo de aquisição menor, porém seu custo operacional é elevado.
+                    </p>
+                    <p align="justify">
+                        A aspersão convencional é indicada para culturas de grãos, pasto, cana-de-açúcar, cultivo de
+                        gramas e hortaliças.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock %}

@@ -1,0 +1,310 @@
+[
+{
+    "model": "blog.contents",
+    "pk": 1,
+    "fields": {
+        "title": "seja-bem-vindo-ao-portal-da-rvp-representacao",
+        "order_out": 1,
+        "text": "Este site tem por objetivo melhorar ainda mais o atendimento aos clientes, nossa obsess\u00e3o! Ele n\u00e3o s\u00f3 permitir\u00e1 que nosso contato seja r\u00e1pido, como tamb\u00e9m trar\u00e1 informa\u00e7\u00f5es sobre promo\u00e7\u00f5es, viradas de cat\u00e1logo e tudo o que possa ser do seu interesse.\r\n\r\nEm breve, tamb\u00e9m ser\u00e1 disponibilizada uma \u00e1rea exclusiva para realiza\u00e7\u00e3o de pedidos on-line. Voc\u00ea tem necessidade de produtos, e n\u00f3s temos urg\u00eancia em lhe atender!!",
+        "picture": "",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 2,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-janeiro17",
+        "order_out": 1,
+        "text": "Corra: esta promo\u00e7\u00e3o \u00e9 valida at\u00e9 31/01/2017 ou enquanto durarem os estoques!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-jan-17_01.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 3,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-janeiro17",
+        "order_out": 2,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-jan-17_02.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 4,
+    "fields": {
+        "title": "promocao-durin-janeiro17",
+        "order_out": 1,
+        "text": "Descontos de at\u00e9 55% em produtos selecionados! N\u00e3o perca esta promo\u00e7\u00e3o, que \u00e9 v\u00e1lida at\u00e9 31/01/2017!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-durin-jan-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 5,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-fevereiro17",
+        "order_out": 1,
+        "text": "Corra: esta promo\u00e7\u00e3o \u00e9 valida at\u00e9 28/02/2017 ou enquanto durarem os estoques!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-fev-17_01.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 6,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-fevereiro17",
+        "order_out": 2,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-fev-17_02.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 7,
+    "fields": {
+        "title": "promocao-durin-fevereiro17",
+        "order_out": 1,
+        "text": "Corra: esta promo\u00e7\u00e3o \u00e9 valida at\u00e9 28/02/2017 ou enquanto durarem os estoques!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-durin-fev-17_01.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 8,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-marco17",
+        "order_out": 1,
+        "text": "Corra: esta promo\u00e7\u00e3o \u00e9 valida at\u00e9 31/03/2017 ou enquanto durarem os estoques!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-mar-17_01.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 9,
+    "fields": {
+        "title": "promocao-gamma-ferramentas-marco17",
+        "order_out": 2,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/promo-gamma-mar-17_02.jpg",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 10,
+    "fields": {
+        "title": "campanha-do-sifao-durin-marco17",
+        "order_out": 1,
+        "text": "Durante o m\u00eas de mar\u00e7o voc\u00ea poder\u00e1 comprar mais pagando menos! O sif\u00e3o universal 72cm (00290) est\u00e1 com pre\u00e7os especiais, quando comprado em conjunto com o sif\u00e3o duplo (00340) ou o sif\u00e3o simples 150cm (00309)!!\r\n\r\nAs regras da promo\u00e7\u00e3o s\u00e3o as seguintes:",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/campanha-sifao-durin-mar-17_1.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 11,
+    "fields": {
+        "title": "campanha-do-sifao-durin-marco17",
+        "order_out": 2,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/campanha-sifao-durin-mar-17_2.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 12,
+    "fields": {
+        "title": "campanha-do-sifao-durin-marco17",
+        "order_out": 3,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/campanha-sifao-durin-mar-17_3.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 13,
+    "fields": {
+        "title": "campanha-do-sifao-durin-marco17",
+        "order_out": 4,
+        "text": "Caso necessite, estamos \u00e0 disposi\u00e7\u00e3o para esclarecimentos adicionais.",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/campanha-sifao-durin-mar-17_4.png",
+        "inverse": true
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 14,
+    "fields": {
+        "title": "kits-para-caixa-acoplada-durin",
+        "order_out": 1,
+        "text": "Conhe\u00e7a mais um lan\u00e7amento da Dur\u00edn: os kits completos para caixa acoplada!\r\n\r\nUm produto pr\u00e1tico, de f\u00e1cil instala\u00e7\u00e3o e com baixa necessidade de manuten\u00e7\u00e3o!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-kit-caixa-acoplada-out-16_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 15,
+    "fields": {
+        "title": "linha-completa-de-duchas-e-acessorios-durin",
+        "order_out": 1,
+        "text": "Conhe\u00e7a e encante-se com a linha de Duchas Dur\u00edn!!\r\nExcelente desempenho e a efici\u00eancia que seu cliente merece!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-duchas-dez-16_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 16,
+    "fields": {
+        "title": "valvulas-para-pia-tanque-e-lavatorio-durin",
+        "order_out": 1,
+        "text": "A escolha perfeita para quem deseja unir design, praticidade e funcionalidade!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-valvulas-dez-16_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 17,
+    "fields": {
+        "title": "valvula-americana-durin",
+        "order_out": 1,
+        "text": "Mais uma op\u00e7\u00e3o de funcionalidade e eleg\u00e2ncia!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-valvula-americana-fev-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 18,
+    "fields": {
+        "title": "suporte-fixo-para-mangueiras-durin",
+        "order_out": 1,
+        "text": "Conhe\u00e7a o suporte fixo para mangueiras Dur\u00edn!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-suporte-fixo-dez-16_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 19,
+    "fields": {
+        "title": "engates-e-reparador-durin",
+        "order_out": 1,
+        "text": "O produto que voc\u00ea j\u00e1 conhece, agora com mais op\u00e7\u00f5es!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-engates-3-4-jan-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 20,
+    "fields": {
+        "title": "mangueira-para-gas-glp-durin",
+        "order_out": 1,
+        "text": "",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-mangueira-glp-fev-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 21,
+    "fields": {
+        "title": "assento-infantil-dudu-baby-durin",
+        "order_out": 1,
+        "text": "Ideal para creches, escolas e hospitais!!\r\nDispon\u00edveis em 2 modelos: Tradicional e Aroma Talco.",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-assento-infantil-fev-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 22,
+    "fields": {
+        "title": "assentos-infantis-coloridos-dudu-baby-durin",
+        "order_out": 1,
+        "text": "Os assentos infantis que voc\u00ea j\u00e1 conhecia, agora em 2 novas cores: rosa e azul!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-assento-infantil-colorido-mar-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 23,
+    "fields": {
+        "title": "mangueira-siliconada-e-suporte-fixo-durin",
+        "order_out": 1,
+        "text": "Conhe\u00e7a mais este novo kit premium Dur\u00edn!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-mangueira-siliconada-mar-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 24,
+    "fields": {
+        "title": "assento-sanitario-especial-para-cadeiras-de-banho",
+        "order_out": 1,
+        "text": "Muito mais carinho para quem precisa de uma aten\u00e7\u00e3o especial!!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-cadeira-de-banho-mar-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 25,
+    "fields": {
+        "title": "parafuso-para-fixacao-de-louca-sanitaria-durin",
+        "order_out": 1,
+        "text": "Garanta prote\u00e7\u00e3o total \u00e0 lou\u00e7a sanit\u00e1ria.",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/lanc-durin-parafuso-fixacao-louca-mar-17_01.png",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 26,
+    "fields": {
+        "title": "catalogos",
+        "order_out": 1,
+        "text": "N\u00e3o existe conte\u00fado cadastrado para esta categoria.",
+        "picture": "",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 28,
+    "fields": {
+        "title": "outros",
+        "order_out": 1,
+        "text": "N\u00e3o existe conte\u00fado cadastrado para esta categoria.",
+        "picture": "",
+        "inverse": false
+    }
+},
+{
+    "model": "blog.contents",
+    "pk": 29,
+    "fields": {
+        "title": "durin-da-feicon-batimat-2017",
+        "order_out": 1,
+        "text": "N\u00e3o deixe de nos visitar na Feicon Batimat 2017!!\r\nEstamos ansiosos esperando por sua visita!",
+        "picture": "https://s3-sa-east-1.amazonaws.com/rvpsite/blog/event-durin-feicon-17.png",
+        "inverse": false
+    }
+}
+]

@@ -1,0 +1,86 @@
+/*
+CORES
+=====
+Roxo -> rgb(54,35,105)
+Verde Água -> rgb(18,187,184)
+Verde Claro Hero -> rgb(111,163,17)
+Cinza Escuro Bem Vindo // Ultimas Notícias // Preview Blog -> rgb(54,67,78)
+Cinza Claro Revendedor -> rgb(209,209,210)
+Cinza Claro Últimas Notícias -> rgb(124,124,124)
+
+*/
+
+
+/* ==================== Configurações independentes de tamanho de tela ==================== */
+.blog-sidebar,
+.blog-sidebar ol li a,
+.blog-post a {
+    color: rgb(54,67,78);
+    font-family: Arial;
+}
+.blog-sidebar h4 {
+    font-size: 14px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding-top: 30px;
+    border-top: 3px solid rgb(18,187,184);
+}
+.blog-sidebar ol li {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.blog-sidebar ol li a {
+    text-transform: uppercase;
+}
+.input-group {
+    padding-bottom: 20px;
+}
+.blog-sidebar .affix {
+    top: 10px;
+    width: 190px;
+}
+.blog-link-buttons {
+    padding-top: 20px;
+}
+.blog-link-buttons #blog-prev_button,
+.blog-link-buttons #blog-next_button {
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    width: 25px;
+    margin-left: 10px;
+}
+.blog-link-buttons #blog-prev_button:hover,
+.blog-link-buttons #blog-next_button:hover {
+	-webkit-transform: scale(1.4);
+	transform: scale(1.5);
+    width: 30px;
+}
+.blog-link-buttons  #blog-page-marker {
+    color: rgb(54,35,105);
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+}
+
+
+/* ==================== Telas - col-sm (tablet) e SUPERIORES ==================== */
+@media only screen and (max-width: 1080px) and (min-width: 771px) {
+    .blog-sidebar .affix {
+        position: static;
+    }
+}
+
+
+/* ==================== Telas - INFERIORES a col-sm (tablet) e MAIORES que 495px ==================== */
+@media only screen and (max-width: 770px) {
+    .blog-sidebar .affix {
+        position: static;
+    }
+    .blog-sidebar > .sidebar-module > h4,
+    .blog-sidebar .sidebar-module a {
+        font-size: 13px;
+    }
+}

@@ -27,7 +27,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'esiomotores.core',
+    'esiomotores.blog.apps.BlogConfig',
+    'esiomotores.core.apps.CustomerMKTConfig',
+    'esiomotores.contacts.apps.ContactConfig',
+    'pytz',
+    's3direct',
+    'test_without_migrations',
 ]
 
 MIDDLEWARE = [
@@ -93,9 +98,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
+
+DATE_FORMAT_INPUT = '%d/%m/%y'
 
 USE_I18N = True
 
@@ -109,3 +116,24 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Email configuration
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+
+# Amazon S3 Configuration
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
+S3DIRECT_REGION = config('S3DIRECT_REGION')
+S3DIRECT_DESTINATIONS = {
+    'AmazonS3': {
+        'key': 'blog',
+        'auth': lambda u: u.is_staff, # Default allow anybody to upload
+        'allowed': ['image/jpeg', 'image/png', 'image/gif', 'document/pdf'], # Default allow all mime types
+    }
+}
