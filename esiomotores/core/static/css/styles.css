@@ -234,6 +234,9 @@ body {
     font-family: HeroStd;
     text-align: right;
 }
+.footer #developed img{
+    width: 60px;
+}
 .footer > #developed > #link{
     text-decoration: underline;
 }
