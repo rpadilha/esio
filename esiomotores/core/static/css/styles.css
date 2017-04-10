@@ -203,7 +203,11 @@ body {
 .footer #add-content {
     padding-bottom: 20px;
 }
-.footer a {
+.footer a,
+.footer #developed #link:link,
+.footer #developed #link:visited,
+.footer #developed #link:hover,
+.footer #developed #link:active {
     text-transform: none;
     text-decoration: none;
     color: white;
