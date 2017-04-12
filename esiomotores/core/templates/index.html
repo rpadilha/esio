@@ -15,7 +15,7 @@
     <meta property="og:url" content="http://www.esiomotores.com.br/" />
     <meta property="og:site_name" content="Esio Motores" />
 
-{#    <link rel="canonical" href="http://www.esiomotores.com.br/">#}
+    <link rel="canonical" href="http://www.esiomotores.com.br/">
 
     <title>Esio Motores</title>
 
@@ -118,7 +118,7 @@
     </div><!-- end of BLOG-PREVIEW -->
 
     <iframe width="100%" height="350" frameborder="0" style="border:0"
-    src="https://www.google.com/maps/embed/v1/place?q=21%C2%B012'42.9%22S%2041%C2%B051'53.0%22W&key=AIzaSyB_A_anxXZrrFeHPMAyvTX_gyV5HBiprQ4" allowfullscreen>
+    src="https://www.google.com/maps/embed/v1/place?q=Esio+Motores&key=AIzaSyB_A_anxXZrrFeHPMAyvTX_gyV5HBiprQ4" allowfullscreen>
     </iframe><!-- end of MAPS -->
 
     {% include 'footer.html' %}
@@ -129,5 +129,15 @@
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     <!-- Customs scripts -->
     <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+    <!-- Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97197488-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

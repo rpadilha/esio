@@ -23,10 +23,9 @@ class ViewContactGet(TestCase):
         """template should include nav.html"""
         self.assertTemplateUsed(self.response, 'nav.html')
 
-    @skip('Skipado')
     def test_template_includes_footer(self):
         """template should include footer.html"""
-        self.assertTemplateUsed(self.response, 'footer_simple.html')
+        self.assertTemplateUsed(self.response, 'footer.html')
 
     def test_html(self):
         """"HTML must contain input tags"""

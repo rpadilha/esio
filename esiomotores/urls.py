@@ -15,6 +15,6 @@ urlpatterns = [
     url(r'^noticias/pesquisa/(?P<search>[\w ]*)/(?P<page>[1-9]|[1-9][0-9])/$', blog_views.search, name='search'),
     url(r'^solucoes/$', core_views.solutions, name='solutions'),
     url(r'^s3direct/', include('s3direct.urls')),
-    # url(r'^robots.txt', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/", content_type="text/plain"), name="robots_file"),
+    url(r'^robots.txt', lambda x: HttpResponse("User-Agent: *\nDisallow: /admin/", content_type="text/plain"), name="robots_file"),
 
 ]

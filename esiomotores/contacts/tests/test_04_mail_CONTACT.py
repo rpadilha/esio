@@ -21,7 +21,6 @@ class ContactEmailValid(TestCase):
         expect = 'tonare@gmail.com'
         self.assertEqual(expect, self.email.from_email)
 
-    @skip("Trocar email em views.py para Esio Motores quando entrar em produção")
     def test_contact_mail_to (self):
         """E-mail should have a destination"""
         expect = ['esiomotores@hotmail.com']

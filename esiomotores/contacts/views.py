@@ -31,8 +31,8 @@ def create (request):
 
     _send_mail('Nova mensagem do site',
                contact.email,
-               #'rvprepresentacao@gmail.com',
-                'tonare@gmail.com',
+               'esiomotores@hotmail.com',
+               #'tonare@gmail.com',
                'contact_email.txt',
                {'contact': contact})
 
