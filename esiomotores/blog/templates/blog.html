@@ -70,7 +70,7 @@
                     {% for content in blog.contents_set.all %}
                         {% if not content.inverse %}
                             {% if content.text != '' %}
-                                <p class="text-justify">{{ content.text | linebreaksbr }}</p>
+                                <p class="text-justify">{{ content.text | safe | linebreaksbr}}</p>
                                 <br><br>
                             {% endif %}
                             {% if content.picture != '' %}
@@ -83,7 +83,7 @@
                                 <br><br>
                             {% endif %}
                             {% if content.text != '' %}
-                                <p class="text-justify">{{ content.text | linebreaksbr }}</p>
+                                <p class="text-justify">{{ content.text | safe | linebreaksbr }}</p>
                                 <br><br>
                             {% endif %}
                         {% endif %}

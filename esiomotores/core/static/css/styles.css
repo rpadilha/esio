@@ -180,7 +180,11 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
-.blog-preview > .blogs {
+.blog-preview > .blogs,
+.blog-preview > .blogs > p a:link,
+.blog-preview > .blogs > p a:visited,
+.blog-preview > .blogs > p a:hover,
+.blog-preview > .blogs > p a:active{
     color: rgb(54,67,78);
 }
 .blog-preview > .blogs > h4 {

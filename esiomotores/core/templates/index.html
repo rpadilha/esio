@@ -111,7 +111,7 @@
         {% for blog in blog_preview %}
             <div class="blogs col-md-4">
                 <h4 class="text-justify">{{ blog.title }}</h4>
-                <p class="text-justify">{{ blog.preview | truncatewords:'15' }}</p>
+                <p class="text-justify">{{ blog.preview | safe | truncatewords:'15' }}</p>
                 <a href="noticia/{{ blog.slug}}" class="btn btn-default">Leia mais</a>
             </div>
         {% endfor %}
